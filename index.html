@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is a resume for Sally Student.">
+    <title>Sally Student Resume</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+      function App(props) {
+        return (
+            <div>
+              {props.children}
+            </div>
+          );
+      }
+      ReactDOM.render(
+        <App>
+            <header>
+                <h1> Sally Student Resume</h1>
+               <address>
+                <h3>Contact</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTQ3ODE3Mjg1NV5BMl5BanBnXkFtZTcwNzA4ODcxNA@@._V1_SY1000_SX746_AL_.jpg"alt="Natalie Portman" />
+
+                 <h2>  Sally Student </h2>
+                 <div><a href="SallyStudent@Outlook.com"> Email me  at SallyStudent@outlook.com</a></div>
+                 <div> Phone Number: 555-555-5555</div>
+               </address>
+                <h2>Statement</h2>
+            </header>
+
+            <main>
+              <section role="region">
+              <p> My name is Sally and I am from San Jose, CA. I have 2 years experience as a front-end  web developer and 5 years experience with coding. I am excited to be your part of your team as full stack web developer. </p>
+              </section>
+             </main>
+            <section className="Education">
+                <h3>Education</h3>
+                     <p className="college">Thinkful Credential: Full Stack Web Developer</p>
+                    <p className="date">Dec 2018 - August 2019</p>
+                    <p className="college">UC Davis - B.S Computer Science </p>
+                    <p className="date">August 2007 - June 2011</p>
+                    <ul>
+                        <li>GPA - 3.53 </li>
+                    </ul>
+            </section>
+            <section className="Employment">
+                <h3>Employment History</h3>
+                <div className="employer">StartUp Inc- Front End Web Developer</div>
+                <div className="date">Jan 2017 - Mar 2019</div>
+                <p>Responsible for implementing visual and interactive elements that users engage with through their web browser when using a web application.</p>
+                <ul> Skills Used
+                   <li> HTML/CSS</li>
+                   <li>JavaScript/jQuery </li>
+                   <li>Version Control/Git</li>
+                   <li>Responsive Design </li>
+                   <li>Testing/Debugging </li>
+                   <li>Browser Developer Tools</li> 
+                </ul>
+                <div className="employer">Teach for Amerigo- Coding Instructor</div>
+                <div className="date">Jan 2014 - Jan 2018</div>
+                <p>Deliver high-quality coding program for kids. Teach coding class in at least two different school sites around the Bay Area. Engage and interact with parents and guardians as needed. Inspire and engage the students for the full duration of each class. Report to STEM program manager with updates, issues or concerns Effective oral and written communication skills </p>
+                <ul> Skills Used
+                    <li> Python Programming</li>
+                    <li> latest micro-computers/micro-controllers such as Raspberry Pi, Arduino, ESP8266, Teensy and array of sensors such as cameras, infrared sensors, ultrasonic sensors, accelerometers, gyroscopic sensors, etc.</li>
+                    <li> We also teach 3D modeling and printing</li>
+                </ul>
+            </section>
+            
+
+        </App>,
+        document.querySelector('#application-root')
+        );
+       
+    </script>
+      
+ </body>
+</html>
